@@ -1,0 +1,35 @@
+{
+  "name": "memory-remix",
+  "description": "Interactive memory cards game with smooth animations",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-covers-manifest.js",
+    "dev": "vite",
+    "build": "node scripts/generate-pixi-intro-manifest.js && node scripts/generate-covers-manifest.js && vite build && node scripts/build-vercel.js",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@breezystack/lamejs": "^1.2.7",
+    "@fseehawer/react-circular-slider": "^3.2.7",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.4.2",
+    "@supabase/supabase-js": "^2.89.0",
+    "gsap": "^3.12.0",
+    "howler": "^2.2.0",
+    "lenis": "^1.1.0",
+    "pixi.js": "^8.17.1",
+    "react": "^19.2.3",
+    "react-circular-input": "^0.2.4",
+    "react-circular-slider-svg": "^0.4.0",
+    "react-dom": "^19.2.3",
+    "sass": "^1.97.2",
+    "three": "^0.182.0"
+  }
+}
