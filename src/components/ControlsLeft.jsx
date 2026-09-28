@@ -378,7 +378,7 @@ const ControlsLeft = ({ activeHintTarget, currentTrack, onTrackChange, hintProps
                   </svg>
                </button>
 
-               <div className="track-display" style={{ overflow: 'hidden', width: '120px', position: 'relative' }}>
+               <div className="track-display">
                   <div className={`text-carousel-track ${animClass}`}>
                      <span className="track-name">TRACK {otherTrack}</span>
                      <span className="track-name">TRACK {currentTrack}</span>
